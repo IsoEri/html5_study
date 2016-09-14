@@ -2,7 +2,7 @@
 
 html {
   font-size: 100%;
-  background-color: #faede5;
+  background: #faede5 url(./transparent-texture/texture_png/seamlesstexture6.png) center center;
   color: #a199c8;
 }
 
@@ -76,7 +76,7 @@ a {
 
 /* main */
 
-article.article_content{
+article.articleContent{
   margin: 5%;
 }
 
@@ -92,12 +92,8 @@ article.article_content{
   justify-content: space-between;
 }
 
-h2 {
-  padding: 0.2rem;
+article.articleContent h2 {
   font-size: 1.2rem;
-}
-
-.h2{
   padding: 0.4rem;
 }
 
@@ -118,10 +114,6 @@ img.imgMonthEarch {
 
 /*div.contentMonth:hover{
   box-shadow: 5px 5px 15px 0px grey;  
-}*/
-
-/*.imgMonthEarch:hover {
-  box-shadow: 5px 5px 15px 0px grey;
 }*/
 
 li.slideList{
