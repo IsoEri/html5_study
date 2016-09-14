@@ -1,0 +1,195 @@
+/* header */
+
+html {
+  font-size: 100%;
+  background-color: #faede5;
+  color: #a199c8;
+}
+
+header {
+  border-top: #ffd1d1 solid 2px;
+}
+
+.title h1 {
+  font-size: 1.7rem;
+  margin-bottom: 0;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #844f30;
+  margin-top: 0.5rem;
+}
+
+#headTitle {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+}
+
+div.navigation nav.nav ul {
+  margin-top: 0;
+  list-style-type: none;
+  float: right;
+}
+
+div.navigation nav.nav ul li {
+  font-size: 0.9rem;
+  padding: 10px;
+  float: left;
+}
+
+div.navigation nav.nav ul li.home {
+  background-color: #ffd1d1;
+  color: grey;
+}
+
+div.homeImage{
+  text-align:center;
+}
+
+img.image01 {
+  width: 70%;
+  height: 70%;
+}
+
+div.navigation nav.nav ul li.nav-menu {
+  color: grey;
+  /*-webkit-transition: all 0.5s ease;*/
+}
+
+div.navigation nav.nav ul li.nav-menu:hover {
+  background-color: #c7ddae;
+}
+
+a {
+  color: grey;
+  text-decoration: none;
+}
+
+
+/* main */
+
+article.article_content{
+  margin: 5%;
+}
+
+#allMonth {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.contentMonth {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2 {
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+
+.h2{
+  padding: 0.4rem;
+}
+
+h3 {
+  margin: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+img.imgMonthEarch {
+  width: 80%;
+  height: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0.3rem;
+}
+
+/*div.contentMonth:hover{
+  box-shadow: 5px 5px 15px 0px grey;  
+}*/
+
+/*.imgMonthEarch:hover {
+  box-shadow: 5px 5px 15px 0px grey;
+}*/
+
+li.slideList{
+  list-style: none;
+  position: relative;
+}
+
+dl.slideDl{
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  -webkit-transition: opacity 0.6s, -webkit-transform 0.6s;
+  transition: opacity 0.6s, transform 0.6s;
+  position: absolute;
+  top: 0;
+  color:#424242;
+  background: rgba(255, 255, 255, .7);
+}
+
+dl.slideDl dd{
+  margin: 0;
+  line-height: 1.6;
+  text-align: justify;
+  word-break: break-all;
+}
+
+li.slideList:hover dl.slideDl{
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+div.titleMonth {
+  color: #cf8c08;
+  background-color: #ffefa1;
+  border: 2px solid #ffe561;
+  border-top-left-radius: 20px;     /* 左上 */
+  border-top-right-radius: 20px;    /* 右上 */
+}
+
+div.imgMonth{
+  margin-top: -2px;
+  border: 2px solid #ffe561;
+  background-color: white;
+  border-bottom-left-radius: 20px;  /* 左下 */
+  border-bottom-right-radius: 20px; /* 右下 */
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* footer */
+
+footer {
+  color: grey;
+  font-size: 0.5rem;
+  clear: both;
+}
+
+body{
+  font-family:'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo', 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+/* media */
+@media(min-width: 770px){
+  .contentMonth {
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   margin: 1.5%;
+  }
+}
